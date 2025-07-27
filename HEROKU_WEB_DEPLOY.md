@@ -53,7 +53,7 @@ winget install --id=Heroku.HerokuCLI
 ```bash
 # Genstart PowerShell
 # Login til Heroku
-heroku login --api-key HRKU-AAznIygkrnPThvvYLnbI6EFWV0xrL9T2GfjF_LjLY4fA_____wnJnx-JPsF2
+heroku login --api-key YOUR_HEROKU_API_KEY
 
 # Deploy
 git init
