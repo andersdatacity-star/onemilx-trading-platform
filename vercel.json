@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "simple_app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "simple_app.py"
+    }
+  ],
+  "env": {
+    "JWT_SECRET_KEY": "onemilx-super-secret-jwt-key-2024",
+    "FLASK_SECRET_KEY": "onemilx-super-secret-flask-key-2024"
+  }
+} 

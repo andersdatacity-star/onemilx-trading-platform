@@ -1,0 +1,13 @@
+{
+  "name": "onemilx-trading-platform",
+  "version": "1.0.0",
+  "description": "OneMilX Trading Platform - AI-driven cryptocurrency trading",
+  "main": "simple_app.py",
+  "scripts": {
+    "start": "gunicorn simple_app:app"
+  },
+  "env": {
+    "JWT_SECRET_KEY": "onemilx-super-secret-jwt-key-2024",
+    "FLASK_SECRET_KEY": "onemilx-super-secret-flask-key-2024"
+  }
+} 
