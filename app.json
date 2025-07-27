@@ -1,0 +1,28 @@
+{
+  "name": "OneMilX Trading Platform",
+  "description": "Avanceret cryptocurrency trading platform med AI-styret strategier og invite-only system",
+  "repository": "https://github.com/yourusername/onemilx-trading-platform",
+  "logo": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+  "keywords": ["python", "flask", "trading", "cryptocurrency", "binance", "ai"],
+  "env": {
+    "JWT_SECRET_KEY": {
+      "description": "Secret key for JWT token generation",
+      "generator": "secret"
+    },
+    "FLASK_SECRET_KEY": {
+      "description": "Secret key for Flask sessions",
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+} 
