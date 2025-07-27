@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneMilX Trading Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-glow {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            color: white;
+        }
+        .stats-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="display-3 mb-4">
+                <i class="fas fa-rocket"></i> OneMilX Trading Platform
+            </h1>
+            <p class="lead mb-5">AI-driven cryptocurrency trading platform - 1 Million in 6 Months</p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-brain fa-3x mb-3"></i>
+                        <h4>Ultra AI Strategy</h4>
+                        <p>Advanced AI algorithms for maximum profit</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                        <h4>Whale Trap</h4>
+                        <p>Follow the big players for success</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line fa-3x mb-3"></i>
+                        <h4>Real-time Analysis</h4>
+                        <p>Live market data and insights</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h3>🚀 Platform Status: LIVE</h3>
+                <p class="text-success">
+                    <i class="fas fa-check-circle"></i> 
+                    OneMilX Trading Platform is now running on Heroku!
+                </p>
+                <div class="mt-4">
+                    <a href="https://onemilx-trading-platform-7a763cc4e2b3.herokuapp.com/" class="btn btn-glow btn-lg me-3">
+                        <i class="fas fa-external-link-alt"></i> Access Platform
+                    </a>
+                    <button class="btn btn-outline-light btn-lg" onclick="showLoginInfo()">
+                        <i class="fas fa-key"></i> Login Info
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="stats-card">
+                    <h4><i class="fas fa-users"></i> User Management</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Invite-only system</li>
+                        <li><i class="fas fa-check text-success"></i> Admin panel</li>
+                        <li><i class="fas fa-check text-success"></i> User registration</li>
+                        <li><i class="fas fa-check text-success"></i> Secure authentication</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="stats-card">
+                    <h4><i class="fas fa-cogs"></i> Platform Features</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Trading dashboard</li>
+                        <li><i class="fas fa-check text-success"></i> Strategy control</li>
+                        <li><i class="fas fa-check text-success"></i> Real-time data</li>
+                        <li><i class="fas fa-check text-success"></i> Risk management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5 text-white">
+            <h5>🔑 Admin Access</h5>
+            <p><strong>Username:</strong> admin | <strong>Password:</strong> admin123</p>
+            <p class="small">Access the full platform with admin privileges</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showLoginInfo() {
+            alert('🔑 Admin Login:\n\nUsername: admin\nPassword: admin123\n\n🌐 Platform URL:\nhttps://onemilx-trading-platform-7a763cc4e2b3.herokuapp.com/');
+        }
+        
+        // Auto-redirect to platform after 5 seconds
+        setTimeout(function() {
+            if (confirm('🚀 Redirect to OneMilX Trading Platform?')) {
+                window.location.href = 'https://onemilx-trading-platform-7a763cc4e2b3.herokuapp.com/';
+            }
+        }, 5000);
+    </script>
+</body>
+</html> 
