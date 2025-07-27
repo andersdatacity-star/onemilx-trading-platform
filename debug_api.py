@@ -1,15 +1,16 @@
 import time
 import hmac
 import hashlib
+import os
 from urllib.parse import urlencode
 import requests
 
 def debug_binance_api():
     print("Debugging Binance API...")
     
-    # Your API credentials
-    api_key = "zkq5AFXJgUVVsnkwTYpwQB3GYb3wGD5G6AoOHawxGRQ4fVylytkQSFakxlxQkzTc"
-    secret_key = "ZF9mnlL8vKSjNqbZCnNsCs52RqUj5Rx7mCRLXKKjwiXSb56qUNXsSRZaPNIV6Ipb"
+    # Your API credentials (use environment variables instead)
+    api_key = os.getenv('BINANCE_API_KEY', 'your_api_key_here')
+    secret_key = os.getenv('BINANCE_SECRET_KEY', 'your_secret_key_here')
     
     # Test parameters
     params = {}
