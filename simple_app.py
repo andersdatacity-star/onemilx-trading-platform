@@ -1,3 +1,7 @@
+# OneMilX Trading Platform - Simple Flask App
+# Last deployment: 2024-12-19
+# Auto-deployed via GitHub Actions
+
 from flask import Flask, render_template, jsonify, request, redirect, url_for, session, flash
 from functools import wraps
 import threading
