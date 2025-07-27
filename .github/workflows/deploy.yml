@@ -1,0 +1,33 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.12.14
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: "onemilx-trading-platform"
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
+        appdir: "."
+        
+    - name: Set Environment Variables
+      run: |
+        curl -X PATCH https://api.heroku.com/apps/onemilx-trading-platform/config-vars \
+          -H "Accept: application/vnd.heroku+json; version=3" \
+          -H "Authorization: Bearer ${{ secrets.HEROKU_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "JWT_SECRET_KEY": "onemilx-super-secret-jwt-key-2024",
+            "FLASK_SECRET_KEY": "onemilx-super-secret-flask-key-2024"
+          }' 
