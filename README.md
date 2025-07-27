@@ -1,4 +1,8 @@
-# OneMilX Trading Platform 🚀
+# 🚀 OneMilX Trading Platform
+
+[![Deploy to Heroku](https://github.com/andersdatacity-star/onemilx-trading-platform/workflows/Deploy%20to%20Heroku/badge.svg)](https://github.com/andersdatacity-star/onemilx-trading-platform/actions)
+
+## 🌟 **OneMilX Ultra AI Strategy - 1 Million in 6 Months**
 
 En avanceret cryptocurrency trading platform med Whale Trap strategi, real-time market analysis og professionelt web dashboard.
 
